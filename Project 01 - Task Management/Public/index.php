@@ -26,6 +26,6 @@ foreach( $tasks as $task ) {
         echo "Tags: " . implode(', ', $task->getTags()) . "\n";
     }
     echo "Assignee: " .implode(', ', $task->getAssignees()) . "\n";
-    echo "priority" .$task->getPriority() . "\n";
+    echo "priority: " .$task->getPriority() . "\n";
     echo "completed: " .($task->isComplete() ? 'Yes' : 'No') . "\n";
 }
